@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Flag Background Animation */
+.flag-bg {
+    position: fixed;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+        120deg,
+        #8B0000 30%,   /* maroon */
+        #FFD700 40%,   /* gold */
+        #006400 55%,   /* green */
+        #FF8C00 70%    /* orange */
+    );
+    animation: wave 10s infinite linear;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+@keyframes wave {
+    0% { transform: translateX(0) translateY(0); }
+    50% { transform: translateX(-10%) translateY(-5%); }
+    100% { transform: translateX(0) translateY(0); }
+}
+
+header {
+    padding: 30px;
+    background: rgba(0,0,0,0.4);
+}
+
+.hero {
+    padding: 50px;
+}
+
+#countdown {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: gold;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: orange;
+}
+
+.content {
+    padding: 20px;
+    background: rgba(0,0,0,0.3);
+}
+
+footer {
+    padding: 15px;
+    background: rgba(0,0,0,0.5);
+}
